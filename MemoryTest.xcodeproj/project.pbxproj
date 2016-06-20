@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C93AF87F1D17CF4500CDE81C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C93AF87E1D17CF4500CDE81C /* main.m */; };
+		C93AF8871D17CF5600CDE81C /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = C93AF8861D17CF5600CDE81C /* ClassA.m */; };
+		C93AF88A1D17CF6200CDE81C /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = C93AF8891D17CF6200CDE81C /* ClassB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		C93AF87B1D17CF4500CDE81C /* MemoryTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MemoryTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93AF87E1D17CF4500CDE81C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C93AF8851D17CF5600CDE81C /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		C93AF8861D17CF5600CDE81C /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		C93AF8881D17CF6200CDE81C /* ClassB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		C93AF8891D17CF6200CDE81C /* ClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				C93AF87E1D17CF4500CDE81C /* main.m */,
+				C93AF8851D17CF5600CDE81C /* ClassA.h */,
+				C93AF8861D17CF5600CDE81C /* ClassA.m */,
+				C93AF8881D17CF6200CDE81C /* ClassB.h */,
+				C93AF8891D17CF6200CDE81C /* ClassB.m */,
 			);
 			path = MemoryTest;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93AF88A1D17CF6200CDE81C /* ClassB.m in Sources */,
+				C93AF8871D17CF5600CDE81C /* ClassA.m in Sources */,
 				C93AF87F1D17CF4500CDE81C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +221,7 @@
 		C93AF8831D17CF4500CDE81C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +229,7 @@
 		C93AF8841D17CF4500CDE81C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
